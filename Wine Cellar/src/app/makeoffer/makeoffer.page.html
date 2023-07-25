@@ -1,0 +1,37 @@
+<ion-content>
+  <div class="maindiv">
+    <ion-row class="row_95">
+      <ion-col size="7">
+        <div class="productname">{{name}}</div>
+        <div class="pricetxt">${{showprice}}</div>
+      </ion-col>
+      <!-- <ion-col size="1" class="ion-no-padding qtydiv">Qty</ion-col>
+      <ion-col size="4">
+        <ion-row class="qtyrow">
+          <ion-col>
+            <ion-icon name="remove-outline" (click)="increament('2')"></ion-icon>
+          </ion-col>
+          <ion-col>
+            <div>{{qty}}</div>
+          </ion-col>
+          <ion-col>
+            <ion-icon name="add-outline" (click)="increament('1')"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-col> -->
+    </ion-row>
+    <div class="ht_5"></div>
+    <div class="pricelbl">Price</div>
+    <div class="ht_5"></div>
+    <ion-input type="number"  [(ngModel)]="price1" (keypress)="enterprice($event)" (keypress)="decimalvalidate($event)"></ion-input>
+ 
+    <ion-row>
+      <ion-col>
+        <ion-button class="btndiv" (click)="cancel()">Cancel</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button class="btnclass" (click)="makeoffer()">Make Offer</ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

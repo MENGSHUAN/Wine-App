@@ -1,0 +1,30 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "Astrazeneca",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {
+    "preferences": {
+      "AutoHideSplashScreen": "false",
+      "SplashScreenDelay": "5000",
+      "ScrollEnabled": "false",
+      "android-minSdkVersion": "22",
+      "BackupWebStorage": "none",
+      "SplashMaintainAspectRatio": "true",
+      "FadeSplashScreenDuration": "1000",
+      "SplashShowOnlyFirstTime": "false",
+      "ShowSplashScreenSpinner": "false",
+      "SplashScreen": "screen",
+      "FadeSplashScreen": "true",
+      "orientation": "portrait",
+      "loadUrlTimeoutValue": "60000",
+      "": "3000"
+    }
+  }
+}

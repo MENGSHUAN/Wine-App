@@ -1,0 +1,80 @@
+.optiondiv{
+    color:rgba(255, 255, 255, 0.838);
+    font-weight: 100;
+    font-size:15px;
+    text-align: center;
+}
+.selectoptiondiv{
+    color:#ffffff;
+    font-weight: bold;
+    font-size:13px;
+    text-align: center;
+}
+.borderdiv{
+    border-bottom:2px solid #ffffff;
+    height:7px;
+    margin: 0px 13px;
+}
+.listimage{
+    border-radius: 15px;
+    width: 100%;
+}
+.listtitle{
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: 5px;
+    color: #000000;
+}
+.pricediv{
+    color:gray;
+    font-size: 12px;
+}
+.reviewrow{
+    background-color: #ffffff;
+    color:#000000;
+    box-shadow:-1px 4px 8px rgb(186, 186, 186);
+    padding:8px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.reviewname{
+    font-weight: bold;
+    font-size: 12px;
+    /* margin-left: 1px; */
+    color: #000000;
+    margin-bottom: -6px;
+}
+.reviewstaricn{
+    color:#ffb259;
+    font-size:8px;
+}
+.reviewtxt{
+    color: gray;
+    margin-left: 2px;
+    margin-top: -3px;
+    font-size: 10px;
+}
+.recomanddiv{
+    border:1px solid rgb(195, 195, 195);
+    position: relative;
+    width: 100%;
+    border-radius: 15px;
+    
+  }
+  .likeimg{
+    border-radius: 15px;
+    width: 100%;
+  }
+  .hearticn{
+      color:red;
+  }
+  .outletname{
+    color: black;
+    font-weight: bold;
+    margin-bottom:5px;
+  }
+  .flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

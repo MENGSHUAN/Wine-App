@@ -1,0 +1,41 @@
+.logincontent{
+    --background: url(/assets/image/bg.jpg) 0 0/100% 100% no-repeat;
+}
+.vertical-align-content{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 100%;
+    padding: 0px 20px;
+    // background: rgba(0,0,0,0.4);
+    color:#ffffff;
+}
+.riderdiv{
+    font-size:30px;
+    font-weight: bold;
+    text-align: left;
+    width: 90%;
+}
+.lbldiv{
+    font-size:18px; 
+}
+.inputdiv{
+    --background:#ffffff;
+   height: 40px;
+   border-radius: 5px;
+}
+ion-input{
+    --padding-top: 5px;
+}
+.forgerpwd{
+    text-align: right;
+    color:rgba(255, 255, 255, 0.869);
+    font-size: 14px;
+}
+
+.footertxt{
+    color: #ffffffab;
+    position: absolute;
+    bottom: 70px;
+    left: 17%;
+}

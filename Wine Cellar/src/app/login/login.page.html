@@ -1,0 +1,55 @@
+<ion-content class="logincontent">
+  <div class="vertical-align-content">
+    <ion-row>
+      <ion-col size="12">
+        <div class="riderdiv">Wine Cellar</div>
+        <div class="ht_5"></div>
+        <div class="riderdiv1">Sign in to continue</div>
+      </ion-col>
+     <ion-col size="12"></ion-col>
+      <ion-col size="12">
+        <div class="lbldiv">Email</div>
+      </ion-col>
+      <ion-col size="12">
+       <ion-item class="inputdiv" lines="none">
+         <ion-input type="email" [(ngModel)]="email"></ion-input>
+       </ion-item>
+      </ion-col>
+      
+      <ion-col size="12">
+        <div class="lbldiv">Password</div>
+      </ion-col>
+      <ion-col size="12">
+       <ion-item class="inputdiv" lines="none">
+         <ion-input [type]="passwordType" [(ngModel)]="pwd"></ion-input>
+         <ion-icon item-end [name]="passwordIcon" (click)='hideShowPassword()'></ion-icon>
+       </ion-item>
+      </ion-col>
+      <ion-col size="12">
+        <div class="forgerpwd" (click)="forgotpwd()">Forget Password</div>
+      </ion-col>
+      <ion-col size="12">
+        <ion-button class="btnclass" (click)="login()">Login</ion-button>
+      </ion-col>
+     
+      <ion-col size="12">
+        <div class="center">or login with</div>
+      </ion-col>
+      <ion-col size="12" >
+        <div class="ht_5"></div>
+      </ion-col>
+      <ion-col size="6" style="text-align: right;">
+        <img src="assets/image/facebook.png" (click)="fblogin()">
+      </ion-col>
+      <ion-col size="6">
+        <img src="assets/image/googleplus.png" (click)="googlelogin()">
+      </ion-col>
+      <ion-col size="12" >
+        <div class="ht_10"></div>
+      </ion-col>
+    </ion-row>
+  </div>
+  <ion-footer>
+    <div class="footertxt" (click)="register()">New to our app? <span style="color:#ffffff;">Register here!</span> </div>
+  </ion-footer>
+</ion-content>

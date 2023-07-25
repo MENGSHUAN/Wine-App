@@ -1,0 +1,95 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="ht_40"></div>
+    <ion-row>
+      <ion-col size="2" style="text-align: center;font-size: 23px;" (click)="back()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-col>
+      <ion-col size="10">
+        <div>FAQs</div>
+      </ion-col>
+    </ion-row>
+    <div class="ht_20"></div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="vertical-align-top-content">
+    <div class="ht_15"></div>
+    <ion-row (click)="opendiv('1')" style="border-bottom: 1px solid rgb(110, 110, 110);">
+      <ion-col class="ion-no-padding" size="11">
+        <div class="titlediv">1. How do i make payment?</div>
+        <div class="ht_15"></div>
+      </ion-col>
+      <ion-col class="ion-no-padding" size="1">
+        <ion-icon name="chevron-down-outline" class="arricn" *ngIf="active == 0"></ion-icon>
+        <ion-icon name="chevron-up-outline" class="arricn" *ngIf="active == '1'"></ion-icon>
+      </ion-col>
+      <div *ngIf="active == 1" class="descriptdiv">Payment will be transactional between the buyer and seller. We do not manage the funds on
+        our platform.</div>
+        <div class="ht_15"></div>
+    </ion-row>
+    <div class="ht_15"></div>
+    <ion-row (click)="opendiv('2')" style="border-bottom: 1px solid rgb(110, 110, 110);">
+      <ion-col class="ion-no-padding" size="11">
+        <div class="titlediv">2. How do i get a refund?</div>
+        <div class="ht_15"></div>
+      </ion-col>
+      <ion-col class="ion-no-padding" size="1">
+        <ion-icon name="chevron-down-outline" class="arricn" *ngIf="active < 2"></ion-icon>
+        <ion-icon name="chevron-up-outline" class="arricn" *ngIf="active == '2'"></ion-icon>
+      </ion-col>
+      <div *ngIf="active == '2'" class="descriptdiv">Our platform facilities the communication between the seller and the buyer. we are not
+        responsible for refund. However, if you face an issue,
+        do report the user and we will look into it.</div>
+        <div class="ht_15"></div>
+    </ion-row>
+    <div class="ht_15"></div>
+    <ion-row (click)="opendiv('3')" style="border-bottom: 1px solid rgb(110, 110, 110);">
+      <ion-col class="ion-no-padding" size="11">
+        <div class="titlediv">3. Faulty Products</div>
+        <div class="ht_15"></div>
+      </ion-col>
+      <ion-col class="ion-no-padding" size="1">
+        <ion-icon name="chevron-down-outline" class="arricn" *ngIf="active < 3"></ion-icon>
+        <ion-icon name="chevron-up-outline" class="arricn" *ngIf="active == '3'"></ion-icon>
+      </ion-col>
+      <div *ngIf="active == '3'" class="descriptdiv">Our platform facilities the communication between the seller and the buyer. we are not
+        responsible for refund. However, if you face an issue,
+        do report the user and we will look into it.</div>
+        <div class="ht_15"></div>
+    </ion-row>
+    <div class="ht_15"></div>
+    <ion-row (click)="opendiv('4')" style="border-bottom: 1px solid rgb(110, 110, 110);">
+      <ion-col class="ion-no-padding" size="11">
+        <div class="titlediv">4. Scammed</div>
+        <div class="ht_15"></div>
+      </ion-col>
+      <ion-col class="ion-no-padding" size="1">
+        <ion-icon name="chevron-down-outline" class="arricn" *ngIf="active < 4"></ion-icon>
+        <ion-icon name="chevron-up-outline" class="arricn" *ngIf="active == '4'"></ion-icon>
+      </ion-col>
+      <div *ngIf="active == '4'" class="descriptdiv">Our platform facilities the communication between the seller and the buyer. we are not
+        responsible for refund. However, if you face an issue,
+        do report the user and we will look into it.</div>
+        <div class="ht_15"></div>
+    </ion-row>
+    <div class="ht_15"></div>
+    <ion-row (click)="opendiv('5')" style="border-bottom: 1px solid rgb(110, 110, 110);">
+      <ion-col class="ion-no-padding" size="11">
+        <div class="titlediv">5. Report</div>
+        <div class="ht_15"></div>
+      </ion-col>
+      <ion-col class="ion-no-padding" size="1">
+        <ion-icon name="chevron-down-outline" class="arricn" *ngIf="active < 5"></ion-icon>
+        <ion-icon name="chevron-up-outline" class="arricn" *ngIf="active == '5'"></ion-icon>
+      </ion-col>
+      <div *ngIf="active == '5'" class="descriptdiv">Our platform facilities the communication between the seller and the buyer. we are not
+        responsible for refund. However, if you face an issue,
+        do report the user and we will look into it.</div>
+        <div class="ht_15"></div>
+    </ion-row>
+
+  </div>
+
+</ion-content>

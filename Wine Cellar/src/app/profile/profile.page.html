@@ -1,0 +1,258 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="ht_40"></div>
+    <ion-row class="row_90">
+      <ion-col class="ion-no-padding" size="3" style="text-align: center;font-size: 23px;">
+        <ion-avatar style="width: 50px;height: 50px;margin-top:-10px;">
+          <img src="assets/image/profilepic.png">
+        </ion-avatar>
+      </ion-col>
+      <ion-col class="ion-no-padding" size="8">
+        <div>Meng Shuan</div>
+        <div style="font-size:12px;color:rgba(255, 255, 255, 0.825);font-weight: 200;">Mobile app development company</div>
+      </ion-col>
+      <ion-col class="ion-no-padding" size="1" (click)="setting()">
+        <ion-icon name="settings-outline"></ion-icon>
+      </ion-col>
+    </ion-row>
+    <div class="ht_20"></div>
+    <ion-row class="row_90" style="font-weight: 200;">
+      <ion-col class="ion-no-padding" (click)="selectcategory('1')">
+        <div [ngClass]="(option == '1')?'selectoptiondiv':'optiondiv'">History</div>
+        <div *ngIf="option == '1'" class="borderdiv"></div>
+      </ion-col>
+      <ion-col class="ion-no-padding" (click)="selectcategory('2')">
+        <div [ngClass]="(option == '2')?'selectoptiondiv':'optiondiv'">My Reviews</div>
+        <div *ngIf="option == '2'" class="borderdiv"></div>
+      </ion-col>
+      <ion-col class="ion-no-padding" (click)="selectcategory('3')">
+        <div [ngClass]="(option == '3')?'selectoptiondiv':'optiondiv'">Favourites</div>
+        <div *ngIf="option == '3'" class="borderdiv"></div>
+      </ion-col>
+      <ion-col class="ion-no-padding" (click)="setting()">
+        <div [ngClass]="(option == '4')?'selectoptiondiv':'optiondiv'">Settings</div>
+        <div *ngIf="option == '4'" class="borderdiv"></div>
+      </ion-col>
+    </ion-row>
+    <div class="ht_20"></div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ht_20"></div>
+  <div class="vertical-align-top-content">
+    <div *ngIf="option == '1'">
+      <ion-row>
+
+        <ion-col size="6">
+          <div class="recomanddiv" class="flex" (click)="gotodetail()">
+            <img src="https://images.vivino.com/thumbs/zn3ggvroQZuY1eb46GLKOw_pb_x600.png" class="listimage" style="height: 160px; width: auto;">
+          </div>
+          <div class="listtitle">Garnacha 2016</div>
+          <div class="pricediv">$1,369</div>
+        </ion-col>
+        <ion-col size="6">
+          <div class="recomanddiv" class="flex" (click)="gotodetail()">
+            <img src="https://images.vivino.com/thumbs/eCi930ihTUmwllpfxq_3JQ_pb_x600.png" class="listimage" style="height: 160px; width: auto;">
+          </div>
+          <div class="listtitle">Saxa Calida Rosso 2016</div>
+          <div class="pricediv">$1,351</div>
+        </ion-col>
+        <ion-col size="6">
+          <div class="recomanddiv" class="flex" (click)="gotodetail()">
+            <img src="https://images.vivino.com/thumbs/zn3ggvroQZuY1eb46GLKOw_pb_x600.png" class="listimage" style="height: 160px; width: auto;">
+          </div>
+          <div class="listtitle">Garnacha 2016</div>
+          <div class="pricediv">$1,369</div>
+        </ion-col>
+        <ion-col size="6">
+          <div class="recomanddiv" class="flex" (click)="gotodetail()">
+            <img src="https://images.vivino.com/thumbs/eCi930ihTUmwllpfxq_3JQ_pb_x600.png" class="listimage" style="height: 160px; width: auto;">
+          </div>
+          <div class="listtitle">Saxa Calida Rosso 2016</div>
+          <div class="pricediv">$1,351</div>
+        </ion-col>
+      </ion-row>
+    </div>
+
+    <div *ngIf="option == '2'">
+      <ion-row class="reviewrow">
+        <ion-col class="ion-no-padding" size="2">
+          <ion-avatar style="width:30px;height:30px;margin-top:5px;">
+            <img src="assets/image/profilepic.png">
+          </ion-avatar>
+        </ion-col>
+        <ion-col class="ion-no-padding" size="8">
+          <div class="ht_5"></div>
+          <div class="reviewname">Camille</div>
+          <ion-icon name="star" class="reviewstaricn"></ion-icon>
+          <ion-icon name="star" class="reviewstaricn"></ion-icon>
+          <ion-icon name="star" class="reviewstaricn"></ion-icon>
+          <ion-icon name="star" class="reviewstaricn"></ion-icon>
+          <ion-icon name="star" class="reviewstaricn"></ion-icon>
+          <div class="reviewtxt">Great buyer,Will deal again :)</div>
+          <div class="ht_5"></div>
+        </ion-col>
+        <ion-col class="ion-no-padding" size="2">
+          <div class="ht_5"></div>
+          <div class="font5">1 dec 21</div>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="reviewrow">
+        <ion-col class="ion-no-padding" size="2">
+          <ion-avatar style="width:30px;height:30px;margin-top:5px;">
+            <img src="assets/image/profilepic.png">
+          </ion-avatar>
+        </ion-col>
+        <ion-col class="ion-no-padding" size="8">
+          <div class="ht_5"></div>
+          <div class="reviewname">Lexj Jone</div>
+          <ion-icon name="star" class="reviewstaricn"></ion-icon>
+          <ion-icon name="star" class="reviewstaricn"></ion-icon>
+          <ion-icon name="star" class="reviewstaricn"></ion-icon>
+          <ion-icon name="star" class="reviewstaricn"></ion-icon>
+          <ion-icon name="star" class="reviewstaricn"></ion-icon>
+          <div class="reviewtxt">Great Product</div>
+          <div class="ht_5"></div>
+        </ion-col>
+        <ion-col class="ion-no-padding" size="2">
+          <div class="ht_5"></div>
+          <div class="font5">1 dec 21</div>
+        </ion-col>
+      </ion-row>
+    </div>
+
+    <div *ngIf="option == '3'">
+      <ion-row>
+        <ion-col size="6" (click)="gotodetail()">
+          <div class="recomanddiv" class="flex">
+            <img src="https://images.vivino.com/thumbs/zn3ggvroQZuY1eb46GLKOw_pb_x600.png" class="likeimg" style="height: 160px; width: auto;">
+          </div>
+          <div class="ht_10"></div>
+          <div class="listtitle">Garnacha 2016</div>
+          <ion-row>
+            <ion-col size="9">
+              <div class="pricediv">$1,369</div>
+            </ion-col>
+            <ion-col size="3">
+                <ion-icon name="heart" class="hearticn"></ion-icon>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col size="6" (click)="gotodetail()">
+          <div class="recomanddiv" class="flex">
+            <img src="https://images.vivino.com/thumbs/eCi930ihTUmwllpfxq_3JQ_pb_x600.png" class="likeimg" style="height: 160px; width: auto;">
+          </div>
+          <div class="ht_10"></div>
+          <div class="listtitle">Saxa Calida Rosso 2016</div>
+          <ion-row>
+            <ion-col size="9">
+              <div class="pricediv">$1,351</div>
+            </ion-col>
+            <ion-col size="3">
+                <ion-icon name="heart" class="hearticn"></ion-icon>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </div>
+
+    <div *ngIf="option == '4'">
+      <!--
+      <ion-row>
+        <ion-col size="12">
+          <div style="color: gray;">Company Name</div>
+          <div class="ht_5"></div>
+          <div style="color: black;font-weight: bold;">K29solutions</div>
+          <div class="ht_5"></div>
+        </ion-col>
+        <ion-col size="12">
+          <div style="color: gray;">Company Registration Number</div>
+          <div class="ht_5"></div>
+          <div style="color: black;font-weight: bold;">+91 9624767583</div>
+          <div class="ht_5"></div>
+        </ion-col>
+        <ion-col size="12">
+          <div style="color: gray;">Company Address</div>
+          <div class="ht_5"></div>
+          <div style="color: black;font-weight: bold;">Surat,Gujarat,India</div>
+          <div class="ht_5"></div>
+        </ion-col>
+        <ion-col size="12">
+          <div style="color: gray;">Company Contact Number</div>
+          <div class="ht_5"></div>
+          <div style="color: black;font-weight: bold;">+91 9624767583</div>
+          <div class="ht_5"></div>
+        </ion-col>
+        <ion-col size="12">
+          <div style="color: gray;">Outlet (click to view outlet details)</div>
+          <div class="ht_5"></div>
+          <div class="outletname" (click)="outletdetail()">
+            Outlet name 1
+          </div>
+          <div class="outletname" (click)="outletdetail()">
+            Outlet name 2
+          </div>
+          <div class="outletname" (click)="outletdetail()">
+            Outlet name 3
+          </div>
+        </ion-col>
+      </ion-row>
+    -->
+
+    
+    <ion-item>
+      <ion-label position="fixed">Fixed Label</ion-label>
+      <ion-input placeholder="Enter text"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input placeholder="Enter text"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="stacked">版本</ion-label>
+      <ion-input placeholder="Enter text"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>通知</ion-label>
+      <ion-toggle slot="end" checked></ion-toggle>
+    </ion-item>
+    
+    <ion-item>
+      <ion-checkbox slot="start" checked></ion-checkbox>
+      <ion-label>Checkbox</ion-label>
+    </ion-item>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer class="ion-no-border fotercls">
+  <ion-row class="footerrow">
+    <ion-col size="3" style="position: relative !important;" class="vertical_centr">
+      <div class="underdivnl">
+        <img src="assets/image/Home.png" class="fottericon" (click)="home()">
+      </div>
+    </ion-col>
+    <ion-col size="3" style="position: relative !important;" class="vertical_centr">
+      <div class="underdivnl">
+        <img src="assets/image/search.png" class="fottericon2" (click)="list()">
+      </div>
+    </ion-col>
+    <ion-col size="3" style="position: relative !important;" class="vertical_centr">
+      <div class="underdivnl">
+        <img src="assets/image/Bell.png" class="fottericon" (click)="notification()">
+      </div>
+    </ion-col>
+    <ion-col size="3" style="position: relative !important;" class="vertical_centr">
+      <div class="underdivnl">
+        <div class="rounddiv">
+        </div>
+        <img src="assets/image/Profile.png" class="fottericon">
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-footer>

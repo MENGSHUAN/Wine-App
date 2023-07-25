@@ -1,0 +1,87 @@
+.productimg{
+    border:1px solid rgb(198, 198, 198);
+    border-radius: 8px;
+    height: 65px;
+}
+.productname{
+    font-weight: bold;
+    color: black;
+    font-size: 14px;
+}
+.pricetxt{
+    font-size: 13px;
+    color:rgb(193, 193, 193);
+}
+.cameraicn{
+    color:#007be2;
+    font-size:30px;
+    margin-top:5px;
+}
+.mediv{
+    float: right;
+    width: 80%;
+    margin-bottom: 10px;
+}
+.youdiv{
+    float: left;
+    width: 80%;
+    margin-bottom: 10px;
+}
+.profileimg{
+    width: 40px;
+    height: 40px;
+    margin:auto;
+}
+.msgdiv{
+    width: 100%;
+    // height: 40px;
+    color:black;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding:12px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 14px;
+}
+.btndiv{
+    color: #ffffff;
+    font-size: 16px;
+    width: 80%;
+    border-radius: 5px;
+    --border-radius: 5px;
+    box-shadow: none !important;
+    --box-shadow: none !important;
+    margin: 0px;
+    background: #007be2;
+    --background: #007be2;
+    text-transform: none;
+}
+.statustxt{
+    color:#007be2;
+    font-weight: bold;
+    margin: 5px 0px;
+}
+.btn {
+    --background: green;
+    --border-radius: 22px;
+    text-transform: none;
+    --box-shadow: none;
+    color: rgba(255, 255, 255, 0.836);
+    font-size: 12px;
+}
+.cancelbtn {
+    --background: #007be2;
+    --border-radius: 0px;
+    text-transform: none;
+    --box-shadow: none;
+    color: rgba(255, 255, 255, 0.836);
+    font-size: 12px;
+}
+.btn1 {
+    --background:green;
+    --border-radius: 0px;
+    text-transform: none;
+    --box-shadow: none;
+    color: rgba(255, 255, 255, 0.836);
+    font-size: 12px;
+}

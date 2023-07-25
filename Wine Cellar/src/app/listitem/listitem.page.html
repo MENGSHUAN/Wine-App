@@ -1,0 +1,247 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="ht_20"></div>
+    <ion-row>
+      <ion-col size="1" style="text-align: center;font-size: 23px;">
+        <!-- <ion-icon name="arrow-back-outline"></ion-icon> -->
+      </ion-col>
+      <ion-col size="11">
+        <h1 style="margin-left: 20px;">搜尋</h1>
+      </ion-col>
+    </ion-row>
+    <div class="ht_20"></div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ht_20"></div>
+  <div class="vertical-align-top-content">
+    <ion-row>
+      <!--
+      <ion-col size="4">
+        <div class="addimagediv" (click)="opengallery('1')">
+          <img *ngIf="Myimage1 || Myimage2 || Myimage3" src="{{config.url}}{{Myimage1}}" class="listimg">
+          <ion-icon *ngIf="!Myimage1" name="add-circle" class="addicn"></ion-icon>
+        </div>
+      </ion-col>
+      <ion-col size="4">
+        <div class="addimagediv" (click)="opengallery('2')">
+          <img *ngIf="Myimage2" src="{{config.url}}{{Myimage2}}" class="listimg">
+          <ion-icon *ngIf="!Myimage2" name="add-circle" class="addicn"></ion-icon>
+        </div>
+      </ion-col>
+      <ion-col size="4">
+        <div class="addimagediv" (click)="opengallery('3')">
+          <img *ngIf="Myimage3" src="{{config.url}}{{Myimage3}}" class="listimg">
+          <ion-icon *ngIf="!Myimage3" name="add-circle" class="addicn"></ion-icon>
+        </div>
+      </ion-col>
+      -->
+
+      <!--
+      <ion-col size="12">
+        <div class="ht_10"></div>
+      </ion-col>
+      <ion-col size="12">
+        <div class="lbldiv">Category</div>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item class="inputdiv" lines="none">
+          <ion-select [(ngModel)]="category">
+            <ion-select-option value="4">Cars</ion-select-option>
+            <ion-select-option value="4">Mobile</ion-select-option>
+            <ion-select-option value="4">Jobs</ion-select-option>
+            <ion-select-option value="4">Home</ion-select-option>
+          </ion-select>
+          <ion-input placeholder="Tyres"></ion-input>
+          <ion-icon slot="end" name="chevron-down-outline" class="arricn"></ion-icon> 
+        </ion-item>
+      </ion-col>
+      -->
+
+      <ion-col size="12">
+        <div class="lbldiv">Name</div>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item class="inputdiv" lines="none">
+          <ion-input [(ngModel)]="title"></ion-input>
+        </ion-item>
+      </ion-col>
+
+      <ion-col size="12">
+        <div class="lbldiv">Brand(Winery)</div>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item class="inputdiv" lines="none">
+          <ion-input [(ngModel)]="title"></ion-input>
+        </ion-item>
+      </ion-col>
+
+      <ion-col size="12">
+        <div class="lbldiv">Country</div>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item class="inputdiv" lines="none">
+          <ion-input [(ngModel)]="title"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-button shape="round" fill="outline" size="small">France</ion-button> 
+      <ion-button shape="round" fill="outline" size="small">Italy</ion-button>
+      <ion-button shape="round" fill="outline" size="small">Spain</ion-button>
+      <ion-button shape="round" fill="outline" size="small">US</ion-button>
+      <ion-button shape="round" fill="outline" size="small">Australia</ion-button>
+      <ion-button shape="round" fill="outline" size="small">Argentina</ion-button>
+      <ion-button shape="round" fill="outline" size="small">Germany</ion-button>
+
+      <ion-col size="12">
+        <div class="lbldiv">Region</div>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item class="inputdiv" lines="none">
+          <ion-input [(ngModel)]="title"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-button shape="round" fill="outline" size="small">Bordeaux</ion-button> 
+      <ion-button shape="round" fill="outline" size="small">Bourgogne</ion-button> 
+      <ion-button shape="round" fill="outline" size="small">Napa Valley</ion-button> 
+      <ion-button shape="round" fill="outline" size="small">Piemonte</ion-button> 
+      <ion-button shape="round" fill="outline" size="small">Rhone Valley</ion-button> 
+      <ion-button shape="round" fill="outline" size="small">Toscana</ion-button> 
+
+      <ion-col size="12">
+        <div class="lbldiv">Category(Varietal)</div>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item class="inputdiv" lines="none">
+          <ion-input [(ngModel)]="title"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-button shape="round" fill="outline" size="small">Red</ion-button> 
+      <ion-button shape="round" fill="outline" size="small">White</ion-button>
+      <ion-button shape="round" fill="outline" size="small">Sparkling</ion-button>
+      <ion-button shape="round" fill="outline" size="small">Rose</ion-button>
+      <ion-button shape="round" fill="outline" size="small">Dessert</ion-button>
+      <ion-button shape="round" fill="outline" size="small">Fortified</ion-button>
+
+      <ion-col size="12">
+        <div class="lbldiv">Grape</div>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item class="inputdiv" lines="none">
+          <ion-input [(ngModel)]="title"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-button shape="round" fill="outline" size="small">Merlot</ion-button> 
+      <ion-button shape="round" fill="outline" size="small">Pinot Noir</ion-button>
+      <ion-button shape="round" fill="outline" size="small">Cabernet</ion-button>
+      <ion-button shape="round" fill="outline" size="small">Chardonnay</ion-button>
+      <ion-button shape="round" fill="outline" size="small">Syrah</ion-button>
+      <ion-button shape="round" fill="outline" size="small">Tempranillo</ion-button>
+      <ion-button shape="round" fill="outline" size="small">Riesling</ion-button>
+
+      <ion-col size="12">
+        <div class="lbldiv">Price</div>
+      </ion-col>
+      <ion-col size="12">
+          <ion-range [dualKnobs]="true" [value]="{ lower: 40, upper: 60 }"></ion-range>
+      </ion-col>
+
+      <ion-col size="12">
+        <div class="lbldiv">Year(Vintage)</div>
+      </ion-col>
+      <ion-col size="12">
+          <ion-range [dualKnobs]="true" [value]="{ lower: 40, upper: 60 }"></ion-range>
+      </ion-col>
+
+      <ion-col size="12">
+        <div class="lbldiv">進入時間</div>
+      </ion-col>
+      <ion-col size="12">
+          <ion-range [dualKnobs]="true" [value]="{ lower: 40, upper: 60 }"></ion-range>
+      </ion-col>
+
+    
+
+      <!--
+      <ion-col size="12">
+        <div class="lbldiv">Condition</div>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item class="inputdiv" lines="none">
+          <ion-select placeholder="New" [(ngModel)]="condition">
+            <ion-select-option>New</ion-select-option>
+            <ion-select-option>Used</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+      -->
+
+      <!--
+      <ion-col size="12">
+        <div class="lbldiv">Price</div>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item class="inputdiv" lines="none">
+          <ion-input [(ngModel)]="price"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12">
+        <div class="lbldiv">Description</div>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item class="inputdiv" lines="none" style="height: 120px;">
+          <ion-input style="height: 120px;" [(ngModel)]="description"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12">
+        <div class="lbldiv">Collection Type</div>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item class="inputdiv" lines="none">
+          <ion-input [(ngModel)]="collection_type"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12">
+        <div class="lbldiv">Location</div>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item class="inputdiv" lines="none">
+          <ion-input [(ngModel)]="location"></ion-input>
+        </ion-item>
+      </ion-col>
+      -->
+
+      <ion-col size="12">
+        <ion-button class="btnclass" (click)="submit()">Search</ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+  <div class="ht_25"></div>
+</ion-content>
+
+<ion-footer class="ion-no-border fotercls">
+  <ion-row class="footerrow">
+    <ion-col size="3" style="position: relative !important;" class="vertical_centr">
+      <div class="underdivnl">
+        <img src="assets/image/Home.png" class="fottericon" (click)="home()">
+      </div>
+    </ion-col>
+    <ion-col size="3" style="position: relative !important;" class="vertical_centr">
+      <div class="underdivnl">
+        <div class="rounddiv">
+        </div>
+        <img src="assets/image/search.png" class="fottericon2">
+      </div>
+    </ion-col>
+    <ion-col size="3" style="position: relative !important;" class="vertical_centr">
+      <div class="underdivnl">
+        <img src="assets/image/Bell.png" class="fottericon" (click)="notification()">
+      </div>
+    </ion-col>
+    <ion-col size="3" style="position: relative !important;" class="vertical_centr">
+      <div class="underdivnl">
+        <img src="assets/image/Profile.png" class="fottericon" (click)="profile()">
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-footer>

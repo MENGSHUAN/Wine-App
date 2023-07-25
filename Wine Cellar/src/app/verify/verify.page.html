@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="ht_40"></div>
+   <ion-row>
+     <ion-col size="2" style="text-align: center;font-size: 23px;" (click)="back()">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+     </ion-col>
+     <ion-col size="10">
+       <div>Registration</div>
+     </ion-col>
+   </ion-row>
+    <div class="ht_20"></div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="vertical-align-top-content">
+    <ion-row>
+      <ion-col size="12">
+        <div>A 6 digit OTP has been sent to your email, enter the OTP to verify your account.</div>
+      </ion-col>
+      <ion-col size="12">
+        <div class="ht_5"></div>
+      </ion-col>
+      <ion-col size="12" style="text-align: center;">
+        <ion-input #otp1 type="number" [(ngModel)]="code1" required maxlength="1" (keyup)="otpController($event,otp2,'')"></ion-input>
+        <ion-input #otp2 type="number" [(ngModel)]="code2" required maxlength="1" (keyup)="otpController($event,otp3,otp1)">
+        </ion-input>
+        <ion-input #otp3 type="number" [(ngModel)]="code3" required maxlength="1" (keyup)="otpController($event,otp4,otp2)">
+        </ion-input>
+        <ion-input #otp4 type="number" [(ngModel)]="code4" required maxlength="1" (keyup)="otpController($event,otp5,otp3)">
+        </ion-input>
+        <ion-input #otp5 type="number" [(ngModel)]="code5" required maxlength="1" (keyup)="otpController($event,otp6,otp4)">
+        </ion-input>
+        <ion-input #otp6 type="number" [(ngModel)]="code6" required maxlength="1" (keyup)="otpController($event,'',otp5)"></ion-input>
+      </ion-col>
+      <ion-col size="12">
+        <ion-button class="btnclass" (click)="verify()">Verify</ion-button>
+      </ion-col>
+      <ion-col size="12" (click)="resend()">
+        <div class="extratxt">Did not receive an OTP?</div>
+        <div class="extratxt">Click here to resend</div>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

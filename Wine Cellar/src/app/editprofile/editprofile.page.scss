@@ -1,0 +1,29 @@
+.profilediv{
+    width:85px;
+    height: 85px;
+    margin: auto;
+    border-radius: 50%;
+    border:2px solid rgb(153, 153, 153);
+    padding:5px;
+    position: relative;
+}
+.profileimg{
+    border-radius: 50%;
+    width:71px;
+    height: 71px;
+    margin:auto;
+    display: table;
+}
+.cameraicn{
+    background-color: #db1429;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 25px;
+    position: absolute;
+    bottom: 7px;
+    right: -3px;
+    font-size: 17px;
+    padding: -1px;
+    text-align: center;
+    padding-top: 2px;
+}

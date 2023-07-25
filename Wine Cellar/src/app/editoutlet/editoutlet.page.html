@@ -1,0 +1,144 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="ht_40"></div>
+   <ion-row>
+     <ion-col size="2" style="text-align: center;font-size: 23px;" (click)="back()">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+     </ion-col>
+     <ion-col size="10">
+       <div>Outlet Information</div>
+     </ion-col>
+   </ion-row>
+    <div class="ht_20"></div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ht_20"></div>
+  <div class="vertical-align-top-content">
+    <ion-row>
+      <ion-col size="12">
+        <div class="lbldiv">Outlet Name</div>
+      </ion-col>
+      <ion-col size="12">
+       <ion-item class="inputdiv" lines="none">
+         <ion-input placeholder="Central Outlet" [(ngModel)]="name"></ion-input>
+       </ion-item>
+      </ion-col>
+      <ion-col size="12">
+        <div class="ht_5"></div>
+      </ion-col>
+      <ion-col size="12">
+        <div class="lbldiv">Outlet Address</div>
+      </ion-col>
+      <ion-col size="12">
+       <ion-item class="inputdiv" lines="none">
+         <ion-input placeholder="Orchard ION" [(ngModel)]="address"></ion-input>
+       </ion-item>
+      </ion-col>
+      <ion-col size="12">
+        <div class="ht_5"></div>
+      </ion-col>
+      <ion-col size="12">
+        <div class="lbldiv">Outlet Contact Number</div>
+      </ion-col>
+      <ion-col size="12">
+       <ion-item class="inputdiv" lines="none">
+         <ion-input placeholder="6655 1001" [(ngModel)]="contact"></ion-input>
+       </ion-item>
+      </ion-col>
+      <ion-col size="12">
+        <div class="ht_5"></div>
+      </ion-col>
+      <ion-col size="12">
+        <div class="lbldiv">Operating Hours</div>
+      </ion-col>
+      <ion-col size="2">
+        <div class="hoursdiv">Mon</div>
+      </ion-col>
+      <ion-col size="4.5">
+        <ion-input class="inputdiv" [(ngModel)]="mon_start"></ion-input>
+      </ion-col>
+      <ion-col size="1">_</ion-col>
+      <ion-col size="4.5">
+        <ion-input class="inputdiv" [(ngModel)]="mon_end"></ion-input>
+      </ion-col>
+      <ion-col size="2">
+        <div class="hoursdiv">Tues</div>
+      </ion-col>
+      <ion-col size="4.5">
+        <ion-input class="inputdiv" [(ngModel)]="tue_start"></ion-input>
+      </ion-col>
+      <ion-col size="1">_</ion-col>
+      <ion-col size="4.5">
+        <ion-input class="inputdiv" [(ngModel)]="tue_end"></ion-input>
+      </ion-col>
+      <ion-col size="2">
+        <div class="hoursdiv">Wed</div>
+      </ion-col>
+      <ion-col size="4.5">
+        <ion-input class="inputdiv" [(ngModel)]="wed_start"></ion-input>
+      </ion-col>
+      <ion-col size="1">_</ion-col>
+      <ion-col size="4.5">
+        <ion-input class="inputdiv" [(ngModel)]="wed_end"></ion-input>
+      </ion-col>
+      <ion-col size="2">
+        <div class="hoursdiv">Thur</div>
+      </ion-col>
+      <ion-col size="4.5">
+        <ion-input class="inputdiv" [(ngModel)]="thu_start"></ion-input>
+      </ion-col>
+      <ion-col size="1">_</ion-col>
+      <ion-col size="4.5">
+        <ion-input class="inputdiv" [(ngModel)]="thu_end"></ion-input>
+      </ion-col>
+      <ion-col size="2">
+        <div class="hoursdiv">Fri</div>
+      </ion-col>
+      <ion-col size="4.5">
+        <ion-input  class="inputdiv" [(ngModel)]="fri_start"></ion-input>
+      </ion-col>
+      <ion-col size="1">_</ion-col>
+      <ion-col size="4.5">
+        <ion-input class="inputdiv" [(ngModel)]="fri_end"></ion-input>
+      </ion-col>
+      <ion-col size="2">
+        <div class="hoursdiv">Sat</div>
+      </ion-col>
+      <ion-col size="4.5">
+        <ion-input class="inputdiv" [(ngModel)]="sat_start"></ion-input>
+      </ion-col>
+      <ion-col size="1">_</ion-col>
+      <ion-col size="4.5">
+        <ion-input class="inputdiv" [(ngModel)]="sat_end"></ion-input>
+      </ion-col>
+      <ion-col size="2">
+        <div class="hoursdiv">Sun</div>
+      </ion-col>
+      <ion-col size="4.5">
+        <ion-input class="inputdiv" [(ngModel)]="sun_start"></ion-input>
+      </ion-col>
+      <ion-col size="1">_</ion-col>
+      <ion-col size="4.5">
+        <ion-input class="inputdiv" [(ngModel)]="sun_end"></ion-input>
+      </ion-col>
+      <ion-col size="12">
+        <div class="lbldiv">Other Information</div>
+      </ion-col>
+      <ion-col size="12" style="position: relative !important;">
+       <ion-item class="inputdiv" lines="none" style="height: 120px;">
+         <ion-textarea style="height: 120px;" [rows]="4" maxlength="180" (ionChange)="contrlenth()" [(ngModel)]="other_info"></ion-textarea>
+       </ion-item>
+       <div class="ionotherdiv">{{otherinfolenth}}/180</div>
+      </ion-col>
+      <ion-col size="12">
+        <ion-button class="btnclass" (click)="edit()">Save</ion-button>
+      </ion-col>
+      <ion-col size="12">
+        <div class="ht_5"></div>
+      </ion-col>
+
+    </ion-row>
+  </div>
+</ion-content>

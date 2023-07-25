@@ -1,0 +1,272 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="ht_10"></div>
+    <ion-row>
+      <ion-col size="9">
+         <h1 style="margin: 20px;">我的酒窖</h1>
+      </ion-col>
+      <ion-col size="1.5" class="vertical_centr" (click)="profile()">
+        <!-- <ion-icon name="heart-outline" class="menuicn"></ion-icon> -->
+        <img src="assets/image/Heartwhite.png" class="hartcls">
+      </ion-col>
+      <ion-col size="1.5" (click)="chat()" class="vertical_centr">
+        <img src="assets/image/Chat.png" class="hartcls">
+        <!-- <ion-icon name="chatbubble-ellipses-outline" class="menuicn"></ion-icon> -->
+      </ion-col>
+    </ion-row>
+    <div class="ht_20"></div>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="contentback">
+  <div class="ht_15"></div>
+  <div class="vertical-align-top-content">
+    <ion-slides #slides pager>
+      <ion-slide>
+      <img src="https://home.liebherr.com/external/products/products-assets/9a492fac-85d3-4eae-8925-37e1266f7882/IMG_1200x1200/WKb%201712.jpg">
+      </ion-slide>
+      <ion-slide>
+        <img src="https://wacaimg1.waca.ec/uploads/shops/5217/products/5c/5cfbe9b5480b8191ffab532f478bcaf2.jpg">
+      </ion-slide>
+      <ion-slide>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8xUZ89vpps0grFRHKmt3n8-J5Bxo-NXS-Tg&usqp=CAU">
+      </ion-slide>
+    </ion-slides>
+    <div class="ht_10"></div>
+    <ion-row>
+      <ion-col size="12">
+        <div class="headinglabel">最近存入/拿出</div>
+      </ion-col>
+      <ion-col size="12">
+        <ion-slides [options]="slideOpts" style=" margin-left:-8px;"  autoplay="100">
+
+          <ion-slide>
+            <ion-card class="slidecard" (click)="gotodetail()">
+              <div class="card">
+                <img src="https://images.vivino.com/thumbs/K1sV2MOLTfyVJxpmraJwTA_pb_x600.png" style="height: 200px; width: auto;">
+              </div>
+              <div class="ht_5"></div>
+              <div class="headingdiv">Prado Enea Gran Reserva 1998</div>
+              <div class="headingdiv">$1,925</div>
+            </ion-card>
+          </ion-slide>
+
+          <ion-slide>
+            <ion-card class="slidecard" (click)="gotodetail()">
+              <div class="card">
+                <img src="https://images.vivino.com/thumbs/Jc2MBqOzQTuU0Ulm7ESpYw_pb_x600.png" style="height: 200px; width: auto;">
+              </div>
+              <div class="ht_5"></div>
+              <div class="headingdiv">Montes Purple Angel 2006</div>
+              <div class="headingdiv">$2,123</div>
+            </ion-card>
+          </ion-slide>
+
+          
+          <ion-slide>
+            <ion-card class="slidecard" (click)="gotodetail()">
+              <div class="card">
+                <img src="https://images.vivino.com/thumbs/LSCOrbAzQUO_TmFXke5MAw_pb_x600.png" style="height: 200px; width: auto;">
+              </div>
+              <div class="ht_5"></div>
+              <div class="headingdiv">Night of the Living Red 2019</div>
+              <div class="headingdiv">$1,823</div>
+            </ion-card>
+          </ion-slide>
+
+          
+          <ion-slide>
+            <ion-card class="slidecard" (click)="gotodetail()">
+              <div class="card">
+                <img src="https://images.vivino.com/thumbs/K1sV2MOLTfyVJxpmraJwTA_pb_x600.png" style="height: 200px; width: auto;">
+              </div>
+              <div class="ht_5"></div>
+              <div class="headingdiv">Prado Enea Gran Reserva 1998</div>
+              <div class="headingdiv">$1,925</div>
+            </ion-card>
+          </ion-slide>
+
+        </ion-slides>
+      </ion-col>
+      <ion-col size="12">
+        <div class="headinglabel">常用分類</div>
+        <div class="ht_10"></div>
+        <ion-slides [options]="slideOpts1">
+          <ion-slide>
+            <ion-card [ngClass]="browsecard"
+              (click)="selectbrowse()">
+              <img src="https://www.plumm.com/globalassets/productassets/plu37001/default-large/plu37001_4_default-large.jpg" style="height: 100px;">
+              <div style="font-size:10px;">Red</div>
+            </ion-card>
+          </ion-slide>
+
+          <ion-slide>
+            <ion-card [ngClass]="browsecard"
+              (click)="selectbrowse()">
+              <img src="https://media.istockphoto.com/id/163140861/zh/%E7%85%A7%E7%89%87/chardonnay-wine-glass-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=4bF_yRu1HOxjIbUG9IS0SxClLNja5Dklc34-UG6yp2c=" style="height: 100px;">
+              <div style="font-size:10px;">White</div>
+            </ion-card>
+          </ion-slide>
+
+          <ion-slide>
+            <ion-card [ngClass]="browsecard"
+              (click)="selectbrowse()">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIQAsURE2DaVLoOwOs6CANY5DahhpkG92RWjz8Xy9V1XaUGvicQg0ZSsGoOlElAiJjC74&usqp=CAU" style="height: 100px;">
+              <div style="font-size:10px;">Sparkling</div>
+            </ion-card>
+          </ion-slide>
+
+          <ion-slide>
+            <ion-card [ngClass]="browsecard"
+              (click)="selectbrowse()">
+              <img src="https://media.istockphoto.com/id/1206849191/photo/single-elegant-glass-of-rose-wine-in-bowl-style-glass-isolated-on-white.jpg?s=612x612&w=0&k=20&c=RaVGsbSZY4X9ku2g9q1fY2B13ZTkLDqmIAi2e8y6Uow=" style="height: 100px;">
+              <div style="font-size:10px;">Rosé</div>
+            </ion-card>
+          </ion-slide>
+
+          <ion-slide>
+            <ion-card [ngClass]="browsecard"
+              (click)="selectbrowse()">
+              <img src="https://media.istockphoto.com/id/1450114914/vector/wine-glasses-doodle1.jpg?s=612x612&w=0&k=20&c=N17ra3d9CGfTE7H0Xkul7wWSrwS5GtILamHYgO60Zp8=" style="height: 100px;">
+              <div style="font-size:10px;">Dessert</div>
+            </ion-card>
+          </ion-slide>
+
+          <ion-slide>
+            <ion-card [ngClass]="browsecard"
+              (click)="selectbrowse()">
+              <img src="https://m.media-amazon.com/images/I/61o8+Pcyc8L._AC_UF894,1000_QL80_.jpg" style="height: 100px;">
+              <div style="font-size:10px;">Furniture</div>
+            </ion-card>
+          </ion-slide>
+
+        </ion-slides>
+      </ion-col>
+      <ion-col size="12">
+        <div class="headinglabel">我的藏酒</div>
+        <div class="ht_10"></div>
+      </ion-col>
+
+      <ion-col size="6" >
+        <div class="recomanddiv" >
+          <img src="https://images.vivino.com/thumbs/rIJix1dzRpu7ghGEqvYj8g_pb_x600.png" style="height: 180px; width: auto;" (click)="gotodetail(1)">
+        </div>
+        <div class="ht_10"></div>
+        <div class="recommandtxt" (click)="gotodetail(1)">Priorat 2015</div>
+        <div class="ht_5"></div>
+        <div style="font-size: 10px;" (click)="gotodetail(1)">$2,494</div>
+      </ion-col>
+      <ion-col size="6" (click)="gotodetail()">
+        <div class="recomanddiv">
+          <img src="https://images.vivino.com/thumbs/K1sV2MOLTfyVJxpmraJwTA_pb_x600.png" style="height: 180px; width: auto;">
+        </div>
+        <div class="ht_10"></div>
+        <div class="recommandtxt">Prado Enea Gran Reserva 1998</div>
+        <div class="ht_5"></div>
+        <div style="font-size: 10px;">$1,925</div>
+      </ion-col> 
+
+      <ion-col size="6" >
+        <div class="recomanddiv" >
+          <img src="https://images.vivino.com/thumbs/U0We4_xATxakraqG2gSOcg_pb_x600.png" style="height: 180px; width: auto;" (click)="gotodetail(1)">
+        </div>
+        <div class="ht_10"></div>
+        <div class="recommandtxt" (click)="gotodetail(1)">Saint-Julien 2000</div>
+        <div class="ht_5"></div>
+        <div style="font-size: 10px;" (click)="gotodetail(1)">$1,791</div>
+      </ion-col>
+      <ion-col size="6" (click)="gotodetail()">
+        <div class="recomanddiv">
+          <img src="https://images.vivino.com/thumbs/gbcFHzZBSGefD_aAGJZSUQ_pb_x600.png" style="height: 180px; width: auto;">
+        </div>
+        <div class="ht_10"></div>
+        <div class="recommandtxt">Saint-Émilion Grand Cru (Premier Grand Cru Classé) 1988</div>
+        <div class="ht_5"></div>
+        <div style="font-size: 10px;">$2,106</div>
+      </ion-col> 
+
+      <ion-col size="6" >
+        <div class="recomanddiv" >
+          <img src="https://images.vivino.com/thumbs/rIJix1dzRpu7ghGEqvYj8g_pb_x600.png" style="height: 180px; width: auto;" (click)="gotodetail(1)">
+        </div>
+        <div class="ht_10"></div>
+        <div class="recommandtxt" (click)="gotodetail(1)">Priorat 2015</div>
+        <div class="ht_5"></div>
+        <div style="font-size: 10px;" (click)="gotodetail(1)">$2,494</div>
+      </ion-col>
+      <ion-col size="6" (click)="gotodetail()">
+        <div class="recomanddiv">
+          <img src="https://images.vivino.com/thumbs/K1sV2MOLTfyVJxpmraJwTA_pb_x600.png" style="height: 180px; width: auto;">
+        </div>
+        <div class="ht_10"></div>
+        <div class="recommandtxt">Prado Enea Gran Reserva 1998</div>
+        <div class="ht_5"></div>
+        <div style="font-size: 10px;">$1,925</div>
+      </ion-col> 
+
+      <ion-col size="6" >
+        <div class="recomanddiv" >
+          <img src="https://images.vivino.com/thumbs/U0We4_xATxakraqG2gSOcg_pb_x600.png" style="height: 180px; width: auto;" (click)="gotodetail(1)">
+        </div>
+        <div class="ht_10"></div>
+        <div class="recommandtxt" (click)="gotodetail(1)">Saint-Julien 2000</div>
+        <div class="ht_5"></div>
+        <div style="font-size: 10px;" (click)="gotodetail(1)">$1,791</div>
+      </ion-col>
+      <ion-col size="6" (click)="gotodetail()">
+        <div class="recomanddiv">
+          <img src="https://images.vivino.com/thumbs/gbcFHzZBSGefD_aAGJZSUQ_pb_x600.png" style="height: 180px; width: auto;">
+        </div>
+        <div class="ht_10"></div>
+        <div class="recommandtxt">Saint-Émilion Grand Cru (Premier Grand Cru Classé) 1988</div>
+        <div class="ht_5"></div>
+        <div style="font-size: 10px;">$2,106</div>
+      </ion-col> 
+      
+      <ion-col size="12">
+        <div class="ht_15"></div>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>
+
+<ion-fab slot="fixed" vertical="bottom" horizontal="end" class="button2">
+  <ion-fab-button (click)="takePhoto()">
+    <ion-icon name="camera-outline"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+<ion-fab slot="fixed" vertical="bottom" horizontal="end" class="button">
+  <ion-fab-button (click)="opengallery('')">
+    <ion-icon name="camera-outline"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+<ion-footer class="ion-no-border fotercls">
+  <ion-row class="footerrow">
+    <ion-col size="3" style="position: relative !important;" class="vertical_centr">
+      <div class="underdivnl">
+        <div class="hmrouddiv">
+          <!-- <ion-icon name="home"></ion-icon> -->
+        </div>
+        <img src="assets/image/Home.png" class="fottericon">
+      </div>
+    </ion-col>
+    <ion-col size="3" style="position: relative !important;" class="vertical_centr">
+      <div class="underdivnl">
+      <img src="assets/image/search.png" class="fottericon2" (click)="list()">
+    </div>
+    </ion-col>
+    <ion-col size="3" style="position: relative !important;" class="vertical_centr">
+      <div class="underdivnl">
+      <img src="assets/image/Bell.png" class="fottericon" (click)="notification()">
+    </div>
+    </ion-col>
+    <ion-col size="3" style="position: relative !important;" class="vertical_centr">
+      <div class="underdivnl">
+      <img src="assets/image/Profile.png" class="fottericon" (click)="profile()">
+    </div>
+    </ion-col>
+  </ion-row>
+</ion-footer>

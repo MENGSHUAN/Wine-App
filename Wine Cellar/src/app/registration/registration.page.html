@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="ht_20"></div>
+   <ion-row>
+     <ion-col size="2" style="text-align: center;font-size: 23px;" (click)="back()">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+     </ion-col>
+     <ion-col size="10">
+       <div>Registration</div>
+     </ion-col>
+   </ion-row>
+    <div class="ht_20"></div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ht_20"></div>
+  <div class="vertical-align-top-content">
+    <ion-row class="emailrow" (click)="registerwithemail()">
+      <ion-col size="2">
+        <ion-icon name="mail-outline"></ion-icon>
+      </ion-col>
+      <ion-col>
+        <div>Register with Email</div>
+      </ion-col>
+    </ion-row>
+    <div class="ht_10"></div>
+    <ion-row class="fbrow" (click)="registerwithfb()">
+      <ion-col size="2">
+      <img src="assets/image/facebook.png">
+      </ion-col>
+      <ion-col>
+        <div style="height: 8px;"></div>
+        <div>Register with Facebook</div>
+      </ion-col>
+    </ion-row>
+    <div class="ht_10"></div>
+    <ion-row class="googlerow" (click)="registerwithgoogle()">
+      <ion-col size="2">
+        <img src="assets/image/googleplus.png">
+      </ion-col>
+      <ion-col>
+        <div style="height: 8px;"></div>
+        <div>Register with Google</div>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

@@ -1,0 +1,114 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="ht_40"></div>
+    <ion-row>
+      <ion-col size="1" style="text-align: center;font-size: 23px;">
+        <!-- <ion-icon name="arrow-back-outline"></ion-icon> -->
+      </ion-col>
+      <ion-col size="11">
+        <div>List Your Item</div>
+      </ion-col>
+    </ion-row>
+    <div class="ht_20"></div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ht_20"></div>
+  <div class="vertical-align-top-content">
+    <ion-row>
+      <ion-col size="4">
+        <div class="addimagediv" (click)="opengallery('1')">
+          <img *ngIf="Myimage || Myimage2 || Myimage3" src="{{config.url}}{{Myimage}}" class="listimg">
+          <ion-icon *ngIf="!Myimage" name="add-circle" class="addicn"></ion-icon>
+        </div>
+      </ion-col>
+      <ion-col size="4">
+        <div class="addimagediv" (click)="opengallery('2')">
+          <img *ngIf="Myimage2" src="{{config.url}}{{Myimage2}}" class="listimg">
+          <ion-icon *ngIf="!Myimage2" name="add-circle" class="addicn"></ion-icon>
+        </div>
+      </ion-col>
+      <ion-col size="4">
+        <div class="addimagediv" (click)="opengallery('3')">
+          <img *ngIf="Myimage3" src="{{config.url}}{{Myimage3}}" class="listimg">
+          <ion-icon *ngIf="!Myimage3" name="add-circle" class="addicn"></ion-icon>
+        </div>
+      </ion-col>
+      <ion-col size="12">
+        <div class="ht_10"></div>
+      </ion-col>
+      <ion-col size="12">
+        <div class="lbldiv">Category</div>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item class="inputdiv" lines="none">
+          <ion-select [(ngModel)]="category">
+            <ion-select-option *ngFor="let cat of allcategory" value="{{cat.id}}">{{cat.name}}</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12">
+        <div class="lbldiv">Title</div>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item class="inputdiv" lines="none">
+          <ion-input [(ngModel)]="title"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12">
+        <div class="lbldiv">Condition</div>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item class="inputdiv" lines="none">
+          <ion-select placeholder="New" [(ngModel)]="condition">
+            <ion-select-option>New</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12">
+        <div class="lbldiv">Price</div>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item class="inputdiv" lines="none">
+          <ion-input [(ngModel)]="price"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12">
+        <div class="lbldiv">Description</div>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item class="inputdiv" lines="none" style="height: 120px;">
+          <ion-input style="height: 120px;" [(ngModel)]="description"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12">
+        <div class="lbldiv">Collection Type</div>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item class="inputdiv" lines="none">
+          <ion-input [(ngModel)]="collection_type"></ion-input>
+          <ion-icon slot="end" name="chevron-down-outline" class="arricn"></ion-icon>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12">
+        <div class="lbldiv">Location</div>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item class="inputdiv" lines="none">
+          <ion-input [(ngModel)]="location"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12">
+        <ion-button class="btnclass" (click)="submit()">Submit</ion-button>
+      </ion-col>
+      <ion-col size="12">
+        <ion-button class="btndiv" (click)="delete()">Remove Listing</ion-button>
+      </ion-col>
+      <ion-col size="12">
+        <ion-button class="btndiv" (click)="sold()">Mark As Sold</ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+  <div class="ht_25"></div>
+</ion-content>

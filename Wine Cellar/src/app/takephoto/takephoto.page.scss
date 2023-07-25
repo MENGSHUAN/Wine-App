@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    height: 15%;
+  }
+  .left-half, .right-half {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  p {
+    font-size: large;
+  }
+  
+  ion-button {
+    width: 80%;
+  }

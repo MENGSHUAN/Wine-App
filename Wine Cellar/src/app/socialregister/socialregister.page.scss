@@ -1,0 +1,33 @@
+.radiodiv {
+    margin: auto;
+    width: 100%;
+  }
+  ion-radio {
+    --color: gray;
+    --color-checked: #c30000;
+    --border: 1px solid gray;
+  }
+  
+  .userdiv {
+    padding: 0px 5px;
+  }
+  .vendordiv {
+    margin-left: 0px;
+    padding: 0px 5px;
+  }
+  .profilediv{
+      width:80px;
+      height: 80px;
+      margin:auto;
+      display: table;
+      border-radius: 50%;
+      border: 1px solid black;
+      padding: 4px;
+  }
+ .profileimg{
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  display: table;
+ }

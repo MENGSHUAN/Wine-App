@@ -1,0 +1,36 @@
+<ion-content>
+  <div *ngIf="popupname == 'startpopup'" class="maindiv">
+    <div class="ht_10"></div>
+    <div class="titlediv">Congrats!</div>
+    <div class="ht_10"></div>
+    <div class="msgdiv">Your account has been <br> successfully created</div>
+    <div class="ht_15"></div>
+    <ion-button *ngIf="usertype == 'individual'" (click)="startbrowse()">Start Browsing</ion-button>
+    <ion-button *ngIf="usertype == 'company'"(click)="setupprofile()">Set Up Profile Details</ion-button>
+  </div>
+
+  <div *ngIf="popupname == 'outletpopup'" class="maindiv">
+    <div class="ht_10"></div>
+    <div class="titlediv">Outlet Setup!</div>
+    <div class="ht_10"></div>
+    <div class="msgdiv">Do you wish to set up your <br> outlet information?</div>
+    <div class="ht_15"></div>
+    <ion-row class="btnrow">
+      <ion-col class="ion-no-padding">
+        <div class="nobtn" (click)="startbrowse()">No</div>
+      </ion-col>
+      <ion-col class="ion-no-padding">
+        <div class="yesbtn" (click)="yes()">Yes</div>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <div *ngIf="popupname == 'outletfinish'" class="maindiv">
+    <div class="ht_10"></div>
+    <div class="titlediv">Outlet Setup</div>
+    <div class="ht_10"></div>
+    <div class="msgdiv">Outlet information has been <br> successfully updated.</div>
+    <div class="ht_15"></div>
+    <ion-button (click)="startbrowse()">Start Browsing</ion-button>
+  </div>
+</ion-content>

@@ -1,0 +1,8 @@
+{
+  "name": "Astrazeneca",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}

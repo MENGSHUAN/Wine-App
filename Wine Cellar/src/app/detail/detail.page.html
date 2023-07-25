@@ -1,0 +1,195 @@
+<ion-content>
+  <div class="ht_20"></div>
+  <ion-row class="row_90 font_25">
+    <ion-col size="1.5">
+      <ion-icon name="arrow-back-outline" (click)="back()"></ion-icon>
+    </ion-col>
+    <ion-col></ion-col>
+    <ion-col size="1.5">
+      <ion-icon name="share-social-outline"></ion-icon>
+    </ion-col>
+    <ion-col size="1.5">
+      <ion-icon name="heart-outline"></ion-icon>
+    </ion-col>
+  </ion-row>
+
+  <div class="flex"> 
+    <img src="https://images.vivino.com/thumbs/r87yUi-gTdeE0oy5uJYZiQ_pb_x600.png" style="width: auto; height: 300px;">
+  </div>
+  <div class="vertical-align-top-content">
+    <ion-row >
+      <ion-col size="12">
+        <div class="headertxt">Cabernet Franc 2017</div>
+      </ion-col>
+      <ion-col size="8">
+        <div style="color:#000000; margin-left:5px; font-size: 20px;">$875<br><br></div>
+      </ion-col>
+      <!--
+      <ion-col size="4">
+        <ion-button class="btndiv" (click)="chat()">Chat</ion-button>
+      </ion-col>
+      -->
+      <ion-col size="12">
+        <div class="lbldiv2">Country</div>
+        <div>France</div>
+      </ion-col>
+
+      <ion-col size="12">
+        <div class="lbldiv2">Rigon</div>
+        <div>Bordeaux</div>
+      </ion-col>
+
+      <ion-col size="12">
+        <div class="lbldiv2">Winery</div>
+        <div>	Château Guadet</div>
+      </ion-col>
+
+      <ion-col size="12">
+        <div class="lbldiv2">Grapes</div>
+        <div>		Cabernet Sauvignon, Cabernet Franc, Merlot</div>
+      </ion-col>
+
+      
+
+
+      <ion-col size="12">
+        <div class="lbldiv2">Description</div>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item class="inputdiv" lines="none" style="height: 120px;">
+          <ion-input style="height: 120px;" placeholder="Add a short description here" [(ngModel)]="description"></ion-input>
+        </ion-item>
+        
+      </ion-col>
+
+
+      
+      <!--
+      <ion-col size="12">
+        <div class="headingdiv">Meet-Up</div>
+      </ion-col>
+      <ion-col size="12">
+        <div>City Hall MRT</div>
+      </ion-col>
+      <ion-col size="12">
+        <div class="headingdiv">Seller Information</div>
+      </ion-col>
+      <ion-col size="3">
+        <ion-avatar>
+          <img src="assets/image/profilepic.png">
+        </ion-avatar>
+      </ion-col>
+      <ion-col size="9">
+        <div class="sellername">Jen Lim</div>
+        <div class="ht_5"></div>
+        <div class="sellettxt font10">Very Responsive</div>
+        <div class="sellettxt font10">Joined 2 years ago</div>
+      </ion-col>
+      -->
+      <!--Reviews-->
+      <ion-col size="12">
+        <div class="headingdiv"><br><br>Reviews</div>
+      </ion-col>
+      <ion-col size="12">
+        <div>5.0 <span class="font10">(20 Reviews)</span></div>
+        <ion-icon name="star" class="staricn"></ion-icon>
+        <ion-icon name="star" class="staricn"></ion-icon>
+        <ion-icon name="star" class="staricn"></ion-icon>
+        <ion-icon name="star" class="staricn"></ion-icon>
+        <ion-icon name="star" class="staricn"></ion-icon>
+      </ion-col>
+      <!--1-->
+      <ion-col size="12" class="ion-no-padding">
+       <div class="hrdiv"></div>
+       <div class="ht_15"></div>
+      </ion-col>
+      <ion-col size="2">
+        <ion-avatar style="width:30px; height:30px;">
+          <img src="assets/image/profilepic.png">
+        </ion-avatar>
+      </ion-col>
+      <ion-col size="7">
+        <div style="font-weight: bold;color:#000000;font-size: 14px;">Camille</div>
+        <ion-icon name="star" class="reviewstaricn"></ion-icon>
+        <ion-icon name="star" class="reviewstaricn"></ion-icon>
+        <ion-icon name="star" class="reviewstaricn"></ion-icon>
+        <ion-icon name="star" class="reviewstaricn"></ion-icon>
+        <ion-icon name="star" class="reviewstaricn"></ion-icon>
+        <div style="color:#707070;font-size:11px;">Great buyer, will deal again:)</div>
+      </ion-col>
+      <ion-col size="3">
+        <div style="color:#707070;font-size:10px;">1 Dec 21</div>
+      </ion-col>
+      <!--2-->
+      <ion-col size="12" class="ion-no-padding">
+        <div class="ht_15"></div>
+       </ion-col>
+      <ion-col size="2">
+        <ion-avatar style="width:30px;height:30px;">
+          <img src="assets/image/profilepic.png">
+        </ion-avatar>
+      </ion-col>
+      <ion-col size="7">
+        <div style="font-weight: bold;color:#000000;font-size: 14px;">Lexi Jone</div>
+        <ion-icon name="star" class="reviewstaricn"></ion-icon>
+        <ion-icon name="star" class="reviewstaricn"></ion-icon>
+        <ion-icon name="star" class="reviewstaricn"></ion-icon>
+        <ion-icon name="star" class="reviewstaricn"></ion-icon>
+        <ion-icon name="star" class="reviewstaricn"></ion-icon>
+        <div style="color:#707070;font-size:11px;">Great Products</div>
+      </ion-col>
+      <ion-col size="3">
+        <div style="color:#707070;font-size:10px;">1 Dec 21</div>
+      </ion-col>
+      <!--3-->
+      <ion-col size="12" class="ion-no-padding">
+        <div class="ht_15"></div>
+       </ion-col>
+      <ion-col size="2">
+        <ion-avatar style="width:30px;height:30px;">
+          <img src="assets/image/profilepic.png">
+        </ion-avatar>
+      </ion-col>
+      <ion-col size="7">
+        <div style="font-weight: bold;color:#000000;font-size: 14px;">Lexi Jone</div>
+        <ion-icon name="star" class="reviewstaricn"></ion-icon>
+        <ion-icon name="star" class="reviewstaricn"></ion-icon>
+        <ion-icon name="star" class="reviewstaricn"></ion-icon>
+        <ion-icon name="star" class="reviewstaricn"></ion-icon>
+        <ion-icon name="star" class="reviewstaricn"></ion-icon>
+        <div style="color:#707070;font-size:11px;">Great Products</div>
+      </ion-col>
+      <ion-col size="3">
+        <div style="color:#707070;font-size:10px;">1 Dec 21</div>
+      </ion-col>
+      <!--4-->
+      <ion-col size="12" class="ion-no-padding">
+        <div class="ht_15"></div>
+       </ion-col>
+      <ion-col size="2">
+        <ion-avatar style="width:30px;height:30px;">
+          <img src="assets/image/profilepic.png">
+        </ion-avatar>
+      </ion-col>
+      <ion-col size="7">
+        <div style="font-weight: bold;color:#000000;font-size: 14px;">Lexi Jone</div>
+        <ion-icon name="star" class="reviewstaricn"></ion-icon>
+        <ion-icon name="star" class="reviewstaricn"></ion-icon>
+        <ion-icon name="star" class="reviewstaricn"></ion-icon>
+        <ion-icon name="star" class="reviewstaricn"></ion-icon>
+        <ion-icon name="star" class="reviewstaricn"></ion-icon>
+        <div style="color:#707070;font-size:11px;">Great Products</div>
+      </ion-col>
+      <ion-col size="3">
+        <div style="color:#707070;font-size:10px;">1 Dec 21</div>
+      </ion-col>
+
+      <ion-col size="12">
+        <div class="ht_10"></div>
+        <div class="seemore">See More</div>
+      </ion-col>
+
+    </ion-row>
+
+  </div>
+</ion-content>

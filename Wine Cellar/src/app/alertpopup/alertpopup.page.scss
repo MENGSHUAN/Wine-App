@@ -1,0 +1,59 @@
+ion-content {
+    background: rgb(8 8 8 / 34%);
+    --background: rgba(24, 24, 24, 0.075);
+    height: 100%;
+  }
+.maindiv{
+    position: relative;
+    width: 90%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 180px;
+    padding-top:10px;
+    background-color: #f2f2f3 !important;
+    z-index: 99999;
+}
+.titlediv{
+    color:#c71212;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.msgdiv{
+    text-align: center;
+    color:gray;
+    font-size:15px;
+}
+ion-button{
+    color: #ffffff;
+    font-size: 16px;
+    width: 100%;
+    box-shadow: none !important;
+    --box-shadow: none !important;
+    margin: 0px;
+    background: #c30000;
+    --background: #c30000;
+    margin: 0px auto 0px;
+    text-transform: none;
+}
+.btnrow{
+    border:1px solid #c30000;
+    height: 35px;
+}
+.nobtn{
+    background-color: #ffffff;
+    text-align: center;
+    color: #c30000;
+    height: 35px;
+    padding-top: 8px;
+}
+.yesbtn{
+    background-color: #c30000;
+    text-align: center;
+    color: white;
+    height: 35px;
+    padding-top: 8px;
+}

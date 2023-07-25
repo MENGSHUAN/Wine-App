@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="ht_40"></div>
+    <ion-row>
+      <ion-col size="2" style="text-align: center;font-size: 23px;" (click)="back()">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+      </ion-col>
+      <ion-col size="10">
+        <div>Contact Us</div>
+      </ion-col>
+    </ion-row>
+    <div class="ht_20"></div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="vertical-align-top-content">
+    <div class="ht_20"></div>
+    <ion-row>
+      <ion-col size="12">
+        <div class="lbldiv">Username</div>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item class="inputdiv" lines="none">
+          <ion-input [(ngModel)]="uname"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12">
+      </ion-col>
+      <ion-col size="12">
+        <div class="lbldiv">Email</div>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item class="inputdiv" lines="none">
+          <ion-input type="email" [(ngModel)]="email"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12">
+      </ion-col>
+      <ion-col size="12">
+        <div class="lbldiv">Enquiry Type</div>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item class="inputdiv" lines="none">
+          <ion-select [(ngModel)]="enquiry_type">
+            <ion-select-option>Feedback</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12"> </ion-col>
+      <ion-col size="12">
+        <div class="lbldiv">Would you like us to contact you back? </div>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item class="inputdiv" lines="none">
+          <ion-select [(ngModel)]="contact">
+            <ion-select-option>No</ion-select-option>
+            <ion-select-option>Yes</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+      <ion-col size="12"> </ion-col>
+      <ion-col size="12">
+        <div class="lbldiv">Message</div>
+      </ion-col>
+      <ion-col size="12">
+        <ion-item class="inputdiv" lines="none" style="height: 120px;">
+          <ion-textarea style="height: 120px;" [(ngModel)]="message"></ion-textarea>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>
+<ion-footer class="ion-no-border">
+  <div class="vertical-align-top-content">
+    <ion-button class="btnclass" (click)="submit()">Submit</ion-button>
+  </div>
+</ion-footer>
