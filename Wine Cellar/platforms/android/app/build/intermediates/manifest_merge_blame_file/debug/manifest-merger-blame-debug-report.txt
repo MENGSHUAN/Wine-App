@@ -1,0 +1,561 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="app.classified.com.ionic"
+4    android:hardwareAccelerated="true"
+5    android:versionCode="1"
+6    android:versionName="0.0.1" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="22"
+9-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="28" />
+10-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml
+11
+12    <supports-screens
+12-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:3:5-191
+13        android:anyDensity="true"
+13-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:3:23-48
+14        android:largeScreens="true"
+14-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:3:49-76
+15        android:normalScreens="true"
+15-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:3:77-105
+16        android:resizeable="true"
+16-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:3:106-131
+17        android:smallScreens="true"
+17-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:3:132-159
+18        android:xlargeScreens="true" />
+18-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:3:160-188
+19
+20    <uses-permission android:name="android.permission.INTERNET" />
+20-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:4:5-67
+20-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:4:22-64
+21    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+21-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:28:5-81
+21-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:28:22-78
+22    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+22-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:29:5-71
+22-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:29:22-68
+23    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+23-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:30:5-74
+23-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:30:22-71
+24    <uses-permission android:name="com.amazon.device.messaging.permission.RECEIVE" />
+24-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:31:5-86
+24-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:31:22-83
+25
+26    <permission
+26-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:32:5-126
+27        android:name="app.classified.com.ionic.permission.RECEIVE_ADM_MESSAGE"
+27-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:32:17-87
+28        android:protectionLevel="signature" />
+28-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:32:88-123
+29
+30    <uses-permission android:name="app.classified.com.ionic.permission.RECEIVE_ADM_MESSAGE" />
+30-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:33:5-95
+30-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:33:22-92
+31    <!-- Create a unique permission for your app and use it so only your app can receive your OneSignal messages. -->
+32    <permission
+32-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:7:5-9:47
+33        android:name="app.classified.com.ionic.permission.C2D_MESSAGE"
+33-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:8:9-63
+34        android:protectionLevel="signature" />
+34-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:9:9-44
+35
+36    <uses-permission android:name="app.classified.com.ionic.permission.C2D_MESSAGE" />
+36-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:11:5-79
+36-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:11:22-76
+37    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- Required, makes sure notifications are delivered on time. -->
+37-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:17:5-82
+37-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:17:22-79
+38    <uses-permission android:name="android.permission.WAKE_LOCK" />
+38-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:18:5-68
+38-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:18:22-65
+39    <!--
+40 Required so the device vibrates on receiving a push notification.
+41         Vibration settings of the device still apply.
+42    -->
+43    <uses-permission android:name="android.permission.VIBRATE" />
+43-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:23:5-66
+43-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:23:22-63
+44    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+44-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:24:5-79
+44-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:24:22-76
+45    <!--
+46 Use to restore notifications the user hasn't interacted with.
+47         They could be missed notifications if the user reboots their device if this isn't in place.
+48    -->
+49    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- START: ShortcutBadger -->
+49-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:29:5-81
+49-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:29:22-78
+50    <!-- Samsung -->
+51    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+51-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:31:5-86
+51-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:31:22-83
+52    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- HTC -->
+52-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:32:5-87
+52-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:32:22-84
+53    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+53-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:33:5-81
+53-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:33:22-78
+54    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- Sony -->
+54-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:34:5-83
+54-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:34:22-80
+55    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+55-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:35:5-88
+55-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:35:22-85
+56    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- Apex -->
+56-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:36:5-92
+56-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:36:22-89
+57    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- Solid -->
+57-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:37:5-84
+57-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:37:22-81
+58    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- Huawei -->
+58-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:38:5-83
+58-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:38:22-80
+59    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+59-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:39:5-91
+59-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:39:22-88
+60    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+60-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:40:5-92
+60-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:40:22-89
+61    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- ZUK -->
+61-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:41:5-93
+61-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:41:22-90
+62    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- OPPO -->
+62-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:42:5-73
+62-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:42:22-70
+63    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+63-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:43:5-82
+63-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:43:22-79
+64    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- EvMe -->
+64-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:44:5-83
+64-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:44:22-80
+65    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+65-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:45:5-88
+65-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:45:22-85
+66    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+66-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:46:5-89
+66-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:46:22-86
+67
+68    <application
+68-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:5:5-27:19
+69        android:debuggable="true"
+70        android:hardwareAccelerated="true"
+70-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:5:18-52
+71        android:icon="@mipmap/ic_launcher"
+71-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:5:53-87
+72        android:label="@string/app_name"
+72-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:5:88-120
+73        android:networkSecurityConfig="@xml/network_security_config"
+73-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:5:121-181
+74        android:supportsRtl="true" >
+74-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:5:182-208
+75        <activity
+75-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:6:9-11:20
+76            android:name="app.classified.com.ionic.MainActivity"
+76-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:6:205-232
+77            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|smallestScreenSize|screenLayout|uiMode"
+77-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:6:19-135
+78            android:label="@string/activity_name"
+78-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:6:136-173
+79            android:launchMode="singleTop"
+79-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:6:174-204
+80            android:screenOrientation="portrait"
+80-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:6:233-269
+81            android:theme="@android:style/Theme.DeviceDefault.NoActionBar"
+81-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:6:270-332
+82            android:windowSoftInputMode="adjustResize" >
+82-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:6:333-375
+83            <intent-filter android:label="@string/launcher_name" >
+83-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:7:13-10:29
+83-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:7:28-65
+84                <action android:name="android.intent.action.MAIN" />
+84-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:8:17-69
+84-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:8:25-66
+85
+86                <category android:name="android.intent.category.LAUNCHER" />
+86-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:9:17-77
+86-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:9:27-74
+87            </intent-filter>
+88        </activity>
+89
+90        <provider
+91            android:name="org.apache.cordova.camera.FileProvider"
+91-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:12:127-180
+92            android:authorities="app.classified.com.ionic.provider"
+92-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:12:19-66
+93            android:exported="false"
+93-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:12:67-91
+94            android:grantUriPermissions="true" >
+94-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:12:92-126
+95            <meta-data
+95-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:13:13-123
+96                android:name="android.support.FILE_PROVIDER_PATHS"
+96-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:13:24-74
+97                android:resource="@xml/camera_provider_paths" />
+97-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:13:75-120
+98        </provider>
+99
+100        <meta-data
+100-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:15:9-102
+101            android:name="com.facebook.sdk.ApplicationId"
+101-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:15:20-65
+102            android:value="@string/fb_app_id" />
+102-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:15:66-99
+103        <meta-data
+103-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:16:9-106
+104            android:name="com.facebook.sdk.ApplicationName"
+104-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:16:20-67
+105            android:value="@string/fb_app_name" />
+105-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:16:68-103
+106
+107        <activity
+107-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:17:9-186
+108            android:name="com.facebook.FacebookActivity"
+108-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:17:139-183
+109            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+109-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:17:19-102
+110            android:label="@string/fb_app_name"
+110-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:17:103-138
+111            android:theme="@style/com_facebook_activity_theme" />
+111-->[com.facebook.android:facebook-common:5.13.0] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\3e7879baaf0f63599434cbc1367afc06\facebook-common-5.13.0\AndroidManifest.xml:32:13-63
+112
+113        <amazon:enable-feature
+113-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:18:9-159
+114            xmlns:amazon="http://schemas.amazon.com/apk/res/android"
+114-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:18:100-156
+115            android:name="com.amazon.device.messaging"
+115-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:18:32-74
+116            android:required="false" />
+116-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:18:75-99
+117
+118        <service
+118-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:19:9-92
+119            android:name="com.onesignal.ADMMessageHandler"
+119-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:19:43-89
+120            android:exported="false" />
+120-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:19:18-42
+121
+122        <receiver
+122-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:20:9-26:20
+123            android:name="com.onesignal.ADMMessageHandler$Receiver"
+123-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:20:19-74
+124            android:permission="com.amazon.device.messaging.permission.SEND" >
+124-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:20:75-139
+125            <intent-filter>
+125-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:21:13-25:29
+126                <action android:name="com.amazon.device.messaging.intent.REGISTRATION" />
+126-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:22:17-90
+126-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:22:25-87
+127                <action android:name="com.amazon.device.messaging.intent.RECEIVE" />
+127-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:23:17-85
+127-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:23:25-82
+128
+129                <category android:name="app.classified.com.ionic" />
+129-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:24:17-69
+129-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:24:27-66
+130            </intent-filter>
+131        </receiver>
+132
+133        <activity android:name="com.facebook.CustomTabMainActivity" />
+133-->[com.facebook.android:facebook-common:5.13.0] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\3e7879baaf0f63599434cbc1367afc06\facebook-common-5.13.0\AndroidManifest.xml:33:9-71
+133-->[com.facebook.android:facebook-common:5.13.0] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\3e7879baaf0f63599434cbc1367afc06\facebook-common-5.13.0\AndroidManifest.xml:33:19-68
+134        <activity android:name="com.facebook.CustomTabActivity" />
+134-->[com.facebook.android:facebook-common:5.13.0] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\3e7879baaf0f63599434cbc1367afc06\facebook-common-5.13.0\AndroidManifest.xml:34:9-67
+134-->[com.facebook.android:facebook-common:5.13.0] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\3e7879baaf0f63599434cbc1367afc06\facebook-common-5.13.0\AndroidManifest.xml:34:19-64
+135        <activity
+135-->[com.google.android.gms:play-services-auth:15.0.1] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\2e1a042bb89f24102939d8706eb62e96\play-services-auth-15.0.1\AndroidManifest.xml:23:9-27:75
+136            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+136-->[com.google.android.gms:play-services-auth:15.0.1] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\2e1a042bb89f24102939d8706eb62e96\play-services-auth-15.0.1\AndroidManifest.xml:24:13-93
+137            android:excludeFromRecents="true"
+137-->[com.google.android.gms:play-services-auth:15.0.1] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\2e1a042bb89f24102939d8706eb62e96\play-services-auth-15.0.1\AndroidManifest.xml:25:13-46
+138            android:exported="false"
+138-->[com.google.android.gms:play-services-auth:15.0.1] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\2e1a042bb89f24102939d8706eb62e96\play-services-auth-15.0.1\AndroidManifest.xml:26:13-37
+139            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+139-->[com.google.android.gms:play-services-auth:15.0.1] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\2e1a042bb89f24102939d8706eb62e96\play-services-auth-15.0.1\AndroidManifest.xml:27:13-72
+140        <!--
+141            Service handling Google Sign-In user revocation. For apps that do not integrate with
+142            Google Sign-In, this service will never be started.
+143        -->
+144        <service
+144-->[com.google.android.gms:play-services-auth:15.0.1] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\2e1a042bb89f24102939d8706eb62e96\play-services-auth-15.0.1\AndroidManifest.xml:33:9-36:110
+145            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+145-->[com.google.android.gms:play-services-auth:15.0.1] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\2e1a042bb89f24102939d8706eb62e96\play-services-auth-15.0.1\AndroidManifest.xml:34:13-89
+146            android:exported="true"
+146-->[com.google.android.gms:play-services-auth:15.0.1] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\2e1a042bb89f24102939d8706eb62e96\play-services-auth-15.0.1\AndroidManifest.xml:35:13-36
+147            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+147-->[com.google.android.gms:play-services-auth:15.0.1] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\2e1a042bb89f24102939d8706eb62e96\play-services-auth-15.0.1\AndroidManifest.xml:36:13-107
+148
+149        <meta-data
+149-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:49:9-51:51
+150            android:name="onesignal_app_id"
+150-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:50:13-44
+151            android:value="" /> <!-- Deprecated - Pulled from OneSignal dashboard. -->
+151-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:51:13-48
+152        <meta-data
+152-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:53:9-55:70
+153            android:name="onesignal_google_project_number"
+153-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:54:13-59
+154            android:value="str:REMOTE" />
+154-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:55:13-67
+155
+156        <receiver
+156-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:57:9-67:20
+157            android:name="com.onesignal.GcmBroadcastReceiver"
+157-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:58:13-62
+158            android:permission="com.google.android.c2dm.permission.SEND" >
+158-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:59:13-73
+159
+160            <!-- High priority so OneSignal payloads can be filtered from other GCM receivers if filterOtherGCMReceivers is enabled. -->
+161            <intent-filter android:priority="999" >
+161-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:62:13-66:29
+161-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:62:28-50
+162                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+162-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:63:17-81
+162-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:63:25-78
+163
+164                <category android:name="app.classified.com.ionic" />
+164-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:24:17-69
+164-->F:\ionic\classified\platforms\android\app\src\main\AndroidManifest.xml:24:27-66
+165            </intent-filter>
+166        </receiver>
+167        <receiver android:name="com.onesignal.NotificationOpenedReceiver" />
+167-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:68:9-77
+167-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:68:19-74
+168
+169        <service
+169-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:70:9-76:19
+170            android:name="com.onesignal.HmsMessageServiceOneSignal"
+170-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:71:13-68
+171            android:exported="false" >
+171-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:72:13-37
+172            <intent-filter>
+172-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:73:13-75:29
+173                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+173-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:74:17-81
+173-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:74:25-78
+174            </intent-filter>
+175        </service>
+176
+177        <activity
+177-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:78:9-84:20
+178            android:name="com.onesignal.NotificationOpenedActivityHMS"
+178-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:79:13-71
+179            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+179-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:80:13-72
+180            <intent-filter>
+180-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:81:13-83:29
+181                <action android:name="android.intent.action.VIEW" />
+181-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:82:17-69
+181-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:82:25-66
+182            </intent-filter>
+183        </activity>
+184
+185        <service android:name="com.onesignal.GcmIntentService" />
+185-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:86:9-66
+185-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:86:18-63
+186        <service
+186-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:87:9-89:72
+187            android:name="com.onesignal.GcmIntentJobService"
+187-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:88:13-61
+188            android:permission="android.permission.BIND_JOB_SERVICE" />
+188-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:89:13-69
+189        <service
+189-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:90:9-92:72
+190            android:name="com.onesignal.RestoreJobService"
+190-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:91:13-59
+191            android:permission="android.permission.BIND_JOB_SERVICE" />
+191-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:92:13-69
+192        <service
+192-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:93:9-95:72
+193            android:name="com.onesignal.RestoreKickoffJobService"
+193-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:94:13-66
+194            android:permission="android.permission.BIND_JOB_SERVICE" />
+194-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:95:13-69
+195        <service
+195-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:96:9-98:43
+196            android:name="com.onesignal.SyncService"
+196-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:97:13-53
+197            android:stopWithTask="true" />
+197-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:98:13-40
+198        <service
+198-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:99:9-101:72
+199            android:name="com.onesignal.SyncJobService"
+199-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:100:13-56
+200            android:permission="android.permission.BIND_JOB_SERVICE" />
+200-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:101:13-69
+201
+202        <activity
+202-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:103:9-105:75
+203            android:name="com.onesignal.PermissionsActivity"
+203-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:104:13-61
+204            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+204-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:105:13-72
+205
+206        <service android:name="com.onesignal.NotificationRestoreService" />
+206-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:107:9-76
+206-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:107:18-73
+207
+208        <receiver android:name="com.onesignal.BootUpReceiver" >
+208-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:109:9-114:20
+208-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:109:19-62
+209            <intent-filter>
+209-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:110:13-113:29
+210                <action android:name="android.intent.action.BOOT_COMPLETED" />
+210-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:111:17-79
+210-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:111:25-76
+211                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+211-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:112:17-82
+211-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:112:25-79
+212            </intent-filter>
+213        </receiver>
+214        <receiver android:name="com.onesignal.UpgradeReceiver" >
+214-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:115:9-119:20
+214-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:115:19-63
+215            <intent-filter>
+215-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:116:13-118:29
+216                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+216-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:117:17-84
+216-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:117:25-81
+217            </intent-filter>
+218        </receiver>
+219        <!--
+220             FirebaseMessagingService performs security checks at runtime,
+221             no need for explicit permissions despite exported="true"
+222        -->
+223        <service
+223-->[com.google.firebase:firebase-messaging:17.3.3] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\ebb181b4648b3b902577cfbbc3f76ac0\firebase-messaging-17.3.3\AndroidManifest.xml:28:9-34:19
+224            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+224-->[com.google.firebase:firebase-messaging:17.3.3] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\ebb181b4648b3b902577cfbbc3f76ac0\firebase-messaging-17.3.3\AndroidManifest.xml:29:13-82
+225            android:exported="true" >
+225-->[com.google.firebase:firebase-messaging:17.3.3] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\ebb181b4648b3b902577cfbbc3f76ac0\firebase-messaging-17.3.3\AndroidManifest.xml:30:13-36
+226            <intent-filter android:priority="-500" >
+226-->[com.google.firebase:firebase-messaging:17.3.3] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\ebb181b4648b3b902577cfbbc3f76ac0\firebase-messaging-17.3.3\AndroidManifest.xml:31:13-33:29
+226-->[com.google.firebase:firebase-messaging:17.3.3] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\ebb181b4648b3b902577cfbbc3f76ac0\firebase-messaging-17.3.3\AndroidManifest.xml:31:28-51
+227                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+227-->[com.google.firebase:firebase-messaging:17.3.3] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\ebb181b4648b3b902577cfbbc3f76ac0\firebase-messaging-17.3.3\AndroidManifest.xml:32:17-78
+227-->[com.google.firebase:firebase-messaging:17.3.3] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\ebb181b4648b3b902577cfbbc3f76ac0\firebase-messaging-17.3.3\AndroidManifest.xml:32:25-75
+228            </intent-filter>
+229        </service>
+230        <service
+230-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\d1f87a4384cf8cbcf6dacd8045b4daf9\firebase-iid-17.0.3\AndroidManifest.xml:29:9-35:19
+231            android:name="com.google.firebase.components.ComponentDiscoveryService"
+231-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\d1f87a4384cf8cbcf6dacd8045b4daf9\firebase-iid-17.0.3\AndroidManifest.xml:30:13-84
+232            android:exported="false" >
+232-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\d1f87a4384cf8cbcf6dacd8045b4daf9\firebase-iid-17.0.3\AndroidManifest.xml:31:13-37
+233            <meta-data
+233-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\d1f87a4384cf8cbcf6dacd8045b4daf9\firebase-iid-17.0.3\AndroidManifest.xml:32:13-34:85
+234                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+234-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\d1f87a4384cf8cbcf6dacd8045b4daf9\firebase-iid-17.0.3\AndroidManifest.xml:33:17-96
+235                android:value="com.google.firebase.components.ComponentRegistrar" />
+235-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\d1f87a4384cf8cbcf6dacd8045b4daf9\firebase-iid-17.0.3\AndroidManifest.xml:34:17-82
+236        </service>
+237
+238        <receiver
+238-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\d1f87a4384cf8cbcf6dacd8045b4daf9\firebase-iid-17.0.3\AndroidManifest.xml:37:9-44:20
+239            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+239-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\d1f87a4384cf8cbcf6dacd8045b4daf9\firebase-iid-17.0.3\AndroidManifest.xml:38:13-78
+240            android:exported="true"
+240-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\d1f87a4384cf8cbcf6dacd8045b4daf9\firebase-iid-17.0.3\AndroidManifest.xml:39:13-36
+241            android:permission="com.google.android.c2dm.permission.SEND" >
+241-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\d1f87a4384cf8cbcf6dacd8045b4daf9\firebase-iid-17.0.3\AndroidManifest.xml:40:13-73
+242            <intent-filter>
+242-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\d1f87a4384cf8cbcf6dacd8045b4daf9\firebase-iid-17.0.3\AndroidManifest.xml:41:13-43:29
+243                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+243-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:63:17-81
+243-->[com.onesignal:OneSignal:3.15.7] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\12562e3c0643532f2d54c12ac5511098\OneSignal-3.15.7\AndroidManifest.xml:63:25-78
+244            </intent-filter>
+245        </receiver>
+246        <!--
+247             FirebaseInstanceIdService performs security checks at runtime,
+248             no need for explicit permissions despite exported="true"
+249        -->
+250        <service
+250-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\d1f87a4384cf8cbcf6dacd8045b4daf9\firebase-iid-17.0.3\AndroidManifest.xml:50:9-56:19
+251            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+251-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\d1f87a4384cf8cbcf6dacd8045b4daf9\firebase-iid-17.0.3\AndroidManifest.xml:51:13-77
+252            android:exported="true" >
+252-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\d1f87a4384cf8cbcf6dacd8045b4daf9\firebase-iid-17.0.3\AndroidManifest.xml:52:13-36
+253            <intent-filter android:priority="-500" >
+253-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\d1f87a4384cf8cbcf6dacd8045b4daf9\firebase-iid-17.0.3\AndroidManifest.xml:53:13-55:29
+253-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\d1f87a4384cf8cbcf6dacd8045b4daf9\firebase-iid-17.0.3\AndroidManifest.xml:53:28-51
+254                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+254-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\d1f87a4384cf8cbcf6dacd8045b4daf9\firebase-iid-17.0.3\AndroidManifest.xml:54:17-80
+254-->[com.google.firebase:firebase-iid:17.0.3] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\d1f87a4384cf8cbcf6dacd8045b4daf9\firebase-iid-17.0.3\AndroidManifest.xml:54:25-77
+255            </intent-filter>
+256        </service>
+257
+258        <activity
+258-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\9dfbba0d19c6d78f6f3b80bcbabd668b\play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
+259            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+259-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\9dfbba0d19c6d78f6f3b80bcbabd668b\play-services-base-16.0.1\AndroidManifest.xml:24:13-79
+260            android:exported="false"
+260-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\9dfbba0d19c6d78f6f3b80bcbabd668b\play-services-base-16.0.1\AndroidManifest.xml:25:13-37
+261            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+261-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\9dfbba0d19c6d78f6f3b80bcbabd668b\play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+262
+263        <provider
+263-->[com.google.firebase:firebase-common:16.0.3] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\286952ad200213a6054afe0172c4bd30\firebase-common-16.0.3\AndroidManifest.xml:10:9-14:39
+264            android:name="com.google.firebase.provider.FirebaseInitProvider"
+264-->[com.google.firebase:firebase-common:16.0.3] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\286952ad200213a6054afe0172c4bd30\firebase-common-16.0.3\AndroidManifest.xml:11:13-77
+265            android:authorities="app.classified.com.ionic.firebaseinitprovider"
+265-->[com.google.firebase:firebase-common:16.0.3] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\286952ad200213a6054afe0172c4bd30\firebase-common-16.0.3\AndroidManifest.xml:12:13-72
+266            android:exported="false"
+266-->[com.google.firebase:firebase-common:16.0.3] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\286952ad200213a6054afe0172c4bd30\firebase-common-16.0.3\AndroidManifest.xml:13:13-37
+267            android:initOrder="100" />
+267-->[com.google.firebase:firebase-common:16.0.3] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\286952ad200213a6054afe0172c4bd30\firebase-common-16.0.3\AndroidManifest.xml:14:13-36
+268
+269        <meta-data
+269-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\24740dd5859002307fe0385a67bc92b9\play-services-basement-16.0.1\AndroidManifest.xml:23:9-25:69
+270            android:name="com.google.android.gms.version"
+270-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\24740dd5859002307fe0385a67bc92b9\play-services-basement-16.0.1\AndroidManifest.xml:24:13-58
+271            android:value="@integer/google_play_services_version" />
+271-->[com.google.android.gms:play-services-basement:16.0.1] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\24740dd5859002307fe0385a67bc92b9\play-services-basement-16.0.1\AndroidManifest.xml:25:13-66
+272        <!--
+273         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+274         with the application context. This config is merged in with the host app's manifest,
+275         but there can only be one provider with the same authority activated at any given
+276         point; so if the end user has two or more different apps that use Facebook SDK, only the
+277         first one will be able to use the provider. To work around this problem, we use the
+278         following placeholder in the authority to identify each host application as if it was
+279         a completely different provider.
+280        -->
+281        <provider
+281-->[com.facebook.android:facebook-core:5.13.0] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\faa09f59a66ce08f144f95c67d12cf6a\facebook-core-5.13.0\AndroidManifest.xml:39:9-42:40
+282            android:name="com.facebook.internal.FacebookInitProvider"
+282-->[com.facebook.android:facebook-core:5.13.0] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\faa09f59a66ce08f144f95c67d12cf6a\facebook-core-5.13.0\AndroidManifest.xml:40:13-70
+283            android:authorities="app.classified.com.ionic.FacebookInitProvider"
+283-->[com.facebook.android:facebook-core:5.13.0] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\faa09f59a66ce08f144f95c67d12cf6a\facebook-core-5.13.0\AndroidManifest.xml:41:13-72
+284            android:exported="false" />
+284-->[com.facebook.android:facebook-core:5.13.0] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\faa09f59a66ce08f144f95c67d12cf6a\facebook-core-5.13.0\AndroidManifest.xml:42:13-37
+285
+286        <receiver
+286-->[com.facebook.android:facebook-core:5.13.0] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\faa09f59a66ce08f144f95c67d12cf6a\facebook-core-5.13.0\AndroidManifest.xml:44:9-50:20
+287            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+287-->[com.facebook.android:facebook-core:5.13.0] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\faa09f59a66ce08f144f95c67d12cf6a\facebook-core-5.13.0\AndroidManifest.xml:45:13-86
+288            android:exported="false" >
+288-->[com.facebook.android:facebook-core:5.13.0] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\faa09f59a66ce08f144f95c67d12cf6a\facebook-core-5.13.0\AndroidManifest.xml:46:13-37
+289            <intent-filter>
+289-->[com.facebook.android:facebook-core:5.13.0] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\faa09f59a66ce08f144f95c67d12cf6a\facebook-core-5.13.0\AndroidManifest.xml:47:13-49:29
+290                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+290-->[com.facebook.android:facebook-core:5.13.0] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\faa09f59a66ce08f144f95c67d12cf6a\facebook-core-5.13.0\AndroidManifest.xml:48:17-95
+290-->[com.facebook.android:facebook-core:5.13.0] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\faa09f59a66ce08f144f95c67d12cf6a\facebook-core-5.13.0\AndroidManifest.xml:48:25-92
+291            </intent-filter>
+292        </receiver>
+293        <receiver
+293-->[com.facebook.android:facebook-core:5.13.0] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\faa09f59a66ce08f144f95c67d12cf6a\facebook-core-5.13.0\AndroidManifest.xml:51:9-58:20
+294            android:name="com.facebook.CampaignTrackingReceiver"
+294-->[com.facebook.android:facebook-core:5.13.0] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\faa09f59a66ce08f144f95c67d12cf6a\facebook-core-5.13.0\AndroidManifest.xml:52:13-65
+295            android:exported="true"
+295-->[com.facebook.android:facebook-core:5.13.0] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\faa09f59a66ce08f144f95c67d12cf6a\facebook-core-5.13.0\AndroidManifest.xml:53:13-36
+296            android:permission="android.permission.INSTALL_PACKAGES" >
+296-->[com.facebook.android:facebook-core:5.13.0] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\faa09f59a66ce08f144f95c67d12cf6a\facebook-core-5.13.0\AndroidManifest.xml:54:13-69
+297            <intent-filter>
+297-->[com.facebook.android:facebook-core:5.13.0] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\faa09f59a66ce08f144f95c67d12cf6a\facebook-core-5.13.0\AndroidManifest.xml:55:13-57:29
+298                <action android:name="com.android.vending.INSTALL_REFERRER" />
+298-->[com.facebook.android:facebook-core:5.13.0] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\faa09f59a66ce08f144f95c67d12cf6a\facebook-core-5.13.0\AndroidManifest.xml:56:17-79
+298-->[com.facebook.android:facebook-core:5.13.0] C:\Users\ms\AppData\Local\Android\Sdk\caches\transforms-2\files-2.1\faa09f59a66ce08f144f95c67d12cf6a\facebook-core-5.13.0\AndroidManifest.xml:56:25-76
+299            </intent-filter>
+300        </receiver>
+301    </application>
+302
+303</manifest>
